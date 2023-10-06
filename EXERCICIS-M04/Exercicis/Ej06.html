@@ -1,59 +1,81 @@
 <!DOCTYPE html>
 <html>
-        <head>
-            <body>
-                <h2>Análisis de ventas</h2>
-                <table border="2px">
-                    <caption>Análisis de ventas anuales</caption>
-                    <tr>
-                        <td rowspan="2px">Año</td>
-                        <th colspan="4px">Expansión de ventas</th>
-                    </tr>
-                    <tr align="center">
-                        <td>Producto A</td>
-                        <td>Producto B</td>
-                        <td>Producto C</td>
-                        <td>Producto D</td>
-                    </tr>
-                    <tr align="center">
-                        <td>N-3</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                    <tr align="center">
-                        <td>N-2</td>
-                        <td>3</td>
-                        <td>5</td>
-                        <td>8</td>
-                        <td>4</td>
-                    </tr>
-                    <tr align="center">
-                        <td>N-1</td>
-                        <td>4</td>
-                        <td>4</td>
-                        <td>7</td>
-                        <td>3</td>
-                    </tr>
-                    <tr align="center">
-                        <td>N</td>
-                        <td>5</td>
-                        <td>7</td>
-                        <td>6</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="4px">Año</td>
-                        <tr align="center">
-                            <td>Producto A</td>
-                            <td>Producto B</td>
-                            <td>Producto C</td>
-                            <td>Producto D</td>
-                    </tr>
-                        <th colspan="6px">Expansión de ventas</th>
-                    </tr>
-                </table>
-            </body>
-        </head>
+    <head>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Ficha  la película</legend>
+                <label>Título</label>
+                <input type="text"></input>
+                <br>
+                <label>Director</label>
+                <input type="text"></input>
+                <br>
+                <label>Fecha de estreno</label>
+                <input type="date"></input>
+                <br>
+                <label>Póster:</label>
+                <input type="file" value="Seleccionar archivo">
+                <label>Ninguno...hivo selec.</label>
+                <br>
+                <label>Versión:</label>
+                <br>
+                <input type="checkbox" value="IMAX">
+                <label>IMAX</label>
+                <input type="checkbox" value="3D">
+                <label>3D</label>
+                <input type="checkbox" value="Full HD">
+                <label>Full HD</label>
+                <br>
+                <label>Clasificación:</label>
+                <br>
+                <input type="radio" name="edad" value="TP">
+                <label>TP</label>
+                <input type="radio" name="edad" value="+12">
+                <label>+12</label>
+                <input type="radio" name="edad" value="+15">
+                <label>+15</label>
+                <input type="radio" name="edad" value="+18">
+                <label>+18</label>
+            </fieldset>
+            <fieldset>
+                <legend>Ficha  de proyección</legend>
+                <label>Sala:</label>
+                <input type="text"></input>
+                <br>
+                <textarea rows="10" cols="55"></textarea>
+                <br>
+                <select>
+                    <option>Inglés</option>
+                    <option>Español</option>
+                    <option>Catlán</option>
+                    <option>Francés</option>
+                    <option>Italiano</option>
+                </select>
+                <br>
+                <label>Sesión</label>
+                <input type="time"></input>
+                <br>
+                <label>Días de proyección:</label>
+                <br>
+                <select size="4">
+                    <option>Lunes</option>
+                    <option>Martes</option>
+                    <option>Miercoles</option>
+                    <option>Jueves</option>
+                    <option>Viernes</option>
+                    <option>Sabado</option>
+                    <option>Domingo</option>
+                </select>
+                <br>
+                <label>Elige un color de fondo:</label>
+                <input type="color"></input>
+                <br>
+                <label for="file">Puntuación del público:</label>
+                <progress id="file" value="75" max="100"></input>
+                <br>
+            </fieldset>
+        </form>
+    </body>
 </html>

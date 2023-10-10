@@ -1,20 +1,17 @@
-body{
-
-}
-
-
-#ICON{
+#icono{
     background-color: aqua;
-
-
-    padding: 1%;
-
-
 }
-
 img{
     margin-left: 40%;
     display: block;
-    width: 25%;
-    height: 25%;
+    width: 30%;
+    height: 30%;
+    padding: 4%;
+}
+#enlaces{
+    margin-left: 40%;
+    display: block;
+    width: 30%;
+    height: 30%;
+    padding: 4%;
 }

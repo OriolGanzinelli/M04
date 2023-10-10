@@ -1,3 +1,20 @@
 header{
+
+}
+
+
+#ICON{
     background-color: aqua;
+
+
+    padding: 1%;
+
+
+}
+
+img{
+    margin-left: 40%;
+    display: block;
+    width: 10%;
+    height: 40%;
 }

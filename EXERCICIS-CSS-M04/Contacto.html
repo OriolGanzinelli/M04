@@ -1,29 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-    <title>Contacto</title>
+  <title>Contacto</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="contact-container">
-            <h1>Contacto</h1>
-            <form id="contact-form" action="procesar_formulario.php" method="post" onsubmit="return validarFormulario()">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-                
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-    </div>
+  <header>
+    <h1>Contacto</h1>
+  </header>
+  <section id="contacto-form">
+    <h2>Formulario de Contacto</h2>
+    <form action="#" method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="correo">Correo Electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="telefono">Número de Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+  <section id="info-contacto">
+    <h2>Información de Contacto</h2>
+    <p><strong>Dirección:</strong> Carrer d'Aiguablava, 121, 08033 Barcelona</p>
+    <p><strong>Teléfono:</strong> +123 456 789</p>
+    <p><strong>Correo Electrónico:</strong> GameScoreReview@gmail.com</p>
+  </section>
+  <section id="mapa">
+    <!-- Aquí puedes agregar un mapa de Google Maps o cualquier otro mapa de tu elección -->
+    <!-- Por ejemplo, puedes usar un iframe de Google Maps: -->
+    <iframe src="https://www.google.com/maps/place/Institut+Tecnol%C3%B2gic+de+Barcelona/@41.4534225,2.1837151,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4bcfdad2100a9:0x3c4e7db0a61a83e0!8m2!3d41.4534225!4d2.18629!16s%2Fg%2F11b6c_s6qy?hl=ca&entry=ttu" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
 </body>
 </html>

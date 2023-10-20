@@ -1,13 +1,17 @@
-#icono{
+#icono {
     background-color: #0A91AB;
 }
-img{
+
+img {
     display: block;
     width: 100%;
     height: 50%;
     padding: 4px;
 }
-#apartados{
+
+/* HOME */
+
+#apartados {
     background-color: #FFC045;
     display: flex;
     justify-content: center;
@@ -15,16 +19,19 @@ img{
     padding: 0;
     font-weight: bold;
 }
-#apartado{
+
+#apartado {
     padding: 1%;
     margin: 1%;
 }
-#titulos{
+
+#titulos {
     color: rgb(67, 179, 179);
     padding-top: 1%;
     font-weight: bold;
 }
-#portadas{
+
+#portadas {
     border-color: #FFC045;
     border-style: dotted;
     padding: 2%;
@@ -32,7 +39,8 @@ img{
     height: auto;
     margin: 4%;
 }
-#portadas-capsula{
+
+#portadas-capsula {
     border-color: #000;
     background-color: #0A90AB25;
     border-style: dotted;
@@ -41,48 +49,56 @@ img{
     height: auto;
     margin: 4%;
 }
-#fotoportadas1{
-	width: auto;
+
+#fotoportadas1 {
+    width: auto;
     height: auto;
     border-top-right-radius: 14px;
     border-top-left-radius: 14px;
 }
-#fotoportadas2{
-	width: 100%;
+
+#fotoportadas2 {
+    width: 100%;
     height: auto;
     border-top-right-radius: 14px;
     border-top-left-radius: 14px;
 }
-#fotoportadas3{
-	width: 100%;
+
+#fotoportadas3 {
+    width: 100%;
     height: auto;
     border-top-right-radius: 14px;
     border-top-left-radius: 14px;
 }
-#fotoportadas3{
-	width: 100%;
+
+#fotoportadas3 {
+    width: 100%;
     height: auto;
     border-top-right-radius: 14px;
     border-top-left-radius: 14px;
 }
-#fotoportadas5{
-	width: 100%;
+
+#fotoportadas5 {
+    width: 100%;
     height: auto;
     border-top-right-radius: 14px;
     border-top-left-radius: 14px;
 }
-#fotoportadas6{
-	width: 100%;
+
+#fotoportadas6 {
+    width: 100%;
     height: auto;
     border-top-right-radius: 14px;
     border-top-left-radius: 14px;
 }
-#videojuego{
+
+#videojuego {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-#boton-caja{
+
+#boton-caja {
     padding: 10px 20px;
     background-color: #FFC045;
     color: #000;
@@ -91,29 +107,18 @@ img{
     cursor: pointer;
     font-weight: bold;
 }
-#boton{
+
+#boton {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-#boton-caja:hover{
+
+#boton-caja:hover {
     background-color: #ccc;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-#portadas-listado{
+#portadas-listado {
     border-color: #FFC045;
     border-style: dotted;
     padding: 2%;
@@ -121,64 +126,119 @@ img{
     height: 520px;
     margin: 4%;
 }
-#especificaciones{
-    color:seagreen;
+
+#especificaciones {
+    color: seagreen;
     padding-top: 1%;
     font-weight: bold;
 }
 
+/* LISTADO VIDEOJUEGOS */
 
-
-
-
-
-
-
-
-#container {
-    text-align: center;
+.game-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-#contact-container {
-    max-width: 600px;
-    background-color: #fff;
+.game {
+    background-color: #f9f9f9;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    overflow: hidden; /* Limpiar flotantes */
 }
 
-#h1 {
+.game img {
+    max-width: 150px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+.game-details {
+    clear: both; /* Limpiar flotantes para que el contenido aparezca debajo de la imagen */
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+
+/* DETALLES */
+
+
+
+
+/* CONTACTO */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #007bff;
+    color: #fff;
     text-align: center;
-    color: #333;
-}
-
-#form {
-    margin-top: 20px;
-}
-
-#label {
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #007bff;
+  }
+  
+  /* Formulario de contacto */
+  label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-}
-
-#textarea {
+  }
+  
+  input, textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
-
-#button {
-    background-color: #007BFF;
+  }
+  
+  button {
+    background-color: #007bff;
     color: #fff;
-    padding: 12px 20px;
     border: none;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-}
-
-#button_hover {
+  }
+  
+  button:hover {
     background-color: #0056b3;
-}
+  }
+  
+  /* Información de contacto */
+  #info-contacto p {
+    margin: 10px 0;
+  }
+  
+  /* Mapa */
+  #mapa {
+    padding: 0;
+  }

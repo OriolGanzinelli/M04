@@ -3,25 +3,29 @@ body {
     align-items: center;
     align-content: center;
     flex-direction: column;
+
 }
+
 h1 {
     font-weight: bold;
     font-family: sans-serif;
 }
 
 .cuadrados_azules {
-    width: 70px;
-    height: 70px;
-    background-color: #3498db;
-    margin: 8px;
-    display: inline-block;
-    border-radius: 15%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .numero-cuadrado {
-    color: black;
-    width: center;
-    height: center;
+    width: 70px;
+    height: 70px;
+    background-color: #3498db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15%;
+    margin: 0 5px;
     font-weight: bold;
     font-family: sans-serif;
 }
@@ -65,7 +69,7 @@ button {
     margin: 5px;
 }
 
-button:hover{
+button:hover {
     background-color: #1f6ea3;
 }
 
@@ -73,14 +77,27 @@ button:hover{
     background-color: red;
     color: white;
     font-weight: bold;
-    width: 46%;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
     padding: 3px;
     border: none;
     display: inline-block;
-    margin: 5px;
     border-radius: 2%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .cuadrados_grises {
-    display: flex
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cuadrados_grises_fila {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px;
 }

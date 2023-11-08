@@ -1,48 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adivina Número Secreto</title>
-    <link rel="stylesheet" href="Estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adivina Número Secreto</title>
+  <link rel="stylesheet" href="Estilo.css">
+  <script src="Estilo.js"></script>
 </head>
-<h1>Adivina el número secreto</h1>
 <body>
-  <div class="cuadrados_azules">
-    <div class="numero-cuadrado">
-      <h2>5</h2>
-    </div>
+  <h1>Adivina el número secreto</h1>
+
+  <!-- SECCIÓN CÓDIGO -->
+  <div class="cuadrados_azules" id="codigo">
+    <div class="numero-cuadrado">*</div>
+    <div class="numero-cuadrado">*</div>
+    <div class="numero-cuadrado">*</div>
+    <div class="numero-cuadrado">*</div>
+    <div class="numero-cuadrado">*</div>
   </div>
-  <div class="cuadrados_azules">
-    <div class="numero-cuadrado">
-      <h2>4</h2>
-    </div>
-  </div>
-  <div class="cuadrados_azules">
-    <div class="numero-cuadrado">
-      <h2>3</h2>
-    </div>
-  </div>
-  <div class="cuadrados_azules">
-    <div class="numero-cuadrado">
-      <h2>6</h2>
-    </div>
-  </div>
-  <div class="cuadrados_azules">
-    <div class="numero-cuadrado">
-      <h2>5</h2>
-    </div>
-  </div>
+
+  <!-- SECCIÓN COMPROBAR -->
   <div class="marco">
-      <p>Escribe aquí un número</p>
-      <input type="text">
-      <button>Comprobar</button>
+    <p>Escribe aquí un número</p>
+    <input type="text" id="inputNumero" autofocus>
+    <button onclick="comprobarNumero()">Comprobar</button>
   </div>
+
+  <!-- SECCIÓN INFO -->
   <div id="resultado-intento">
     <p>Primer intento, suerte!</p>
   </div>
-  <div class="cuadrados_grises">
-    
+
+  <!-- SECCIÓN RESULT -->
+  <div class="cuadrados_grises" id="resultado">
   </div>
 </body>
 </html>

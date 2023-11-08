@@ -4,82 +4,30 @@
     <body>
         <form>
             <fieldset>
-                <legend>Ficha  la película</legend>
-                <label>Título</label>
+                <legend>Datos Personales</legend>
+                <label>Nombre:</label>
                 <input type="text"></input>
                 <br>
-                <label>Director</label>
-                <input type="text"></input>
-                <br>
-                <label>Fecha de estreno</label>
-                <input type="date"></input>
-                <br>
-                <label>Póster:</label>
-                <input type="file" value="Seleccionar archivo">
-                <label>Ninguno...hivo selec.</label>
-                <br>
-                <label>Versión:</label>
-                <br>
-                <input type="checkbox" value="IMAX">
-                <label>IMAX</label>
-                <input type="checkbox" value="3D">
-                <label>3D</label>
-                <input type="checkbox" value="Full HD">
-                <label>Full HD</label>
-                <br>
-                <label>Clasificación:</label>
-                <br>
-                <input type="radio" name="edad" value="TP">
-                <label>TP</label>
-                <input type="radio" name="edad" value="+12">
-                <label>+12</label>
-                <input type="radio" name="edad" value="+15">
-                <label>+15</label>
-                <input type="radio" name="edad" value="+18">
-                <label>+18</label>
+                <label>Edad:</label>
+                <select>
+                    <option>1-10</option>
+                    <option>11-20</option>
+                    <option>21-30</option>
+                    <option>31-40</option>
+                </select>
             </fieldset>
             <fieldset>
-                <legend>Ficha  de proyección</legend>
-                <label>Sala:</label>
-                <select>
-                    <option>Cine de Barrio</option>
-                    <option>Cines Yelmo</option>
-                    <option>Cinesa</option>
-                    <option>Cines Full HD</option>
-                </select>
+                <legend>Aficiones</legend>
+                <label>Programar en Kotlin</label>
+                <input type="checkbox" value="Kotlin">
                 <br>
-                <textarea rows="10" cols="55"></textarea>
+                <label>Maquetar páginas web</label>
+                <input type="checkbox" value="Web">
                 <br>
-                <select>
-                    <option>Inglés</option>
-                    <option>Español</option>
-                    <option>Catlán</option>
-                    <option>Francés</option>
-                    <option>Italiano</option>
-                </select>
-                <br>
-                <label>Sesión</label>
-                <input type="time"></input>
-                <br>
-                <label>Días de proyección:</label>
-                <br>
-                <select size="4">
-                    <option>Lunes</option>
-                    <option>Martes</option>
-                    <option>Miercoles</option>
-                    <option>Jueves</option>
-                    <option>Viernes</option>
-                    <option>Sabado</option>
-                    <option>Domingo</option>
-                </select>
-                <br>
-                <label>Elige un color de fondo:</label>
-                <input type="color"></input>
-                <br>
-                <label for="file">Puntuación del público:</label>
-                <progress id="file" value="75" max="100"></input>
-                <br>
+                <label>Crear hojas de estilo CSS</label>
+                <input type="checkbox" value="CSS">
             </fieldset>
+            <input type="submit" value="Enviar" />
         </form>
     </body>
 </html>
